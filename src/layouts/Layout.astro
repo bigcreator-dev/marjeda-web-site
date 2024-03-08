@@ -4,7 +4,7 @@ import { SEO } from "astro-seo";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
+  "/marjeda-web-site/opengraph.jpg",
   Astro.site,
 ).toString();
 
@@ -16,11 +16,15 @@ const makeTitle = title
 ---
 
 <!doctype html>
-<html lang="es_MX">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/marjeda-web-site/favicon.svg"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <SEO
@@ -42,10 +46,11 @@ const makeTitle = title
         image: {
           alt: "Marjeda Industrial Homepage Screenshot",
         },
-		optional: {
-			locale: "es_MX",
-			description: "Optimizamos suministros y mantenimiento para máxima eficiencia.",
-		},
+        optional: {
+          locale: "es_MX",
+          description:
+            "Optimizamos suministros y mantenimiento para máxima eficiencia.",
+        },
       }}
     />
   </head>
