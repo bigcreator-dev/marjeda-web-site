@@ -5,5 +5,5 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  base: "https://bigcreator-dev.github.io/marjeda-web-site/",
+  base: "/marjeda-web-site",
 });
