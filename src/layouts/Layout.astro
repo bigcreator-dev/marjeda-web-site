@@ -59,6 +59,19 @@ const makeTitle = title
     <slot />
     <Footer />
     <style is:global>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      main {
+        flex-grow: 1;
+      }
       img {
         content-visibility: auto;
       }
